@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'NimbusAdditionals' target in the 'NimbusAdditionals' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
