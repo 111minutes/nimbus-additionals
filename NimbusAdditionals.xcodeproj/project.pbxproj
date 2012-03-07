@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91F12FC62FEC40569AC776EC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A9E47DEBA44AC7A86BD840 /* libPods.a */; };
 		AD756A3515078E1200E8FBD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD756A3415078E1200E8FBD5 /* Foundation.framework */; };
-		AD756A3B15078E1200E8FBD5 /* NimbusAdditionals.m in Sources */ = {isa = PBXBuildFile; fileRef = AD756A3A15078E1200E8FBD5 /* NimbusAdditionals.m */; };
 		AD756A4315078E1300E8FBD5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD756A4215078E1300E8FBD5 /* SenTestingKit.framework */; };
 		AD756A4515078E1300E8FBD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD756A4415078E1300E8FBD5 /* UIKit.framework */; };
 		AD756A4615078E1300E8FBD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD756A3415078E1200E8FBD5 /* Foundation.framework */; };
 		AD756A4915078E1300E8FBD5 /* libNimbusAdditionals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD756A3115078E1200E8FBD5 /* libNimbusAdditionals.a */; };
 		AD756A4F15078E1300E8FBD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD756A4D15078E1300E8FBD5 /* InfoPlist.strings */; };
 		AD756A5215078E1300E8FBD5 /* NimbusAdditionalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD756A5115078E1300E8FBD5 /* NimbusAdditionalsTests.m */; };
+		AD756A6D1507949100E8FBD5 /* DXTableViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AD756A6B1507949100E8FBD5 /* DXTableViewModel.h */; };
+		AD756A6E1507949100E8FBD5 /* DXTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD756A6C1507949100E8FBD5 /* DXTableViewModel.m */; };
+		AD756A71150797AF00E8FBD5 /* DXCellFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AD756A6F150797AF00E8FBD5 /* DXCellFactory.h */; };
+		AD756A72150797AF00E8FBD5 /* DXCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD756A70150797AF00E8FBD5 /* DXCellFactory.m */; };
+		EC646342126347D8BFE7B2CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A9E47DEBA44AC7A86BD840 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +35,20 @@
 /* Begin PBXFileReference section */
 		AD756A3115078E1200E8FBD5 /* libNimbusAdditionals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNimbusAdditionals.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD756A3415078E1200E8FBD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		AD756A3815078E1200E8FBD5 /* NimbusAdditionals-Prefix.pch */ = {isa = PBXFileReference; path = "NimbusAdditionals-Prefix.pch"; sourceTree = "<group>"; };
-		AD756A3915078E1200E8FBD5 /* NimbusAdditionals.h */ = {isa = PBXFileReference; path = NimbusAdditionals.h; sourceTree = "<group>"; };
-		AD756A3A15078E1200E8FBD5 /* NimbusAdditionals.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NimbusAdditionals.m; sourceTree = "<group>"; };
+		AD756A3815078E1200E8FBD5 /* NimbusAdditionals-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NimbusAdditionals-Prefix.pch"; sourceTree = "<group>"; };
 		AD756A4115078E1300E8FBD5 /* NimbusAdditionalsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbusAdditionalsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD756A4215078E1300E8FBD5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		AD756A4415078E1300E8FBD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		AD756A4C15078E1300E8FBD5 /* NimbusAdditionalsTests-Info.plist */ = {isa = PBXFileReference; path = "NimbusAdditionalsTests-Info.plist"; sourceTree = "<group>"; };
+		AD756A4C15078E1300E8FBD5 /* NimbusAdditionalsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NimbusAdditionalsTests-Info.plist"; sourceTree = "<group>"; };
 		AD756A4E15078E1300E8FBD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD756A5015078E1300E8FBD5 /* NimbusAdditionalsTests.h */ = {isa = PBXFileReference; path = NimbusAdditionalsTests.h; sourceTree = "<group>"; };
+		AD756A5015078E1300E8FBD5 /* NimbusAdditionalsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NimbusAdditionalsTests.h; sourceTree = "<group>"; };
 		AD756A5115078E1300E8FBD5 /* NimbusAdditionalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NimbusAdditionalsTests.m; sourceTree = "<group>"; };
+		AD756A6B1507949100E8FBD5 /* DXTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTableViewModel.h; sourceTree = "<group>"; };
+		AD756A6C1507949100E8FBD5 /* DXTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTableViewModel.m; sourceTree = "<group>"; };
+		AD756A6F150797AF00E8FBD5 /* DXCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXCellFactory.h; sourceTree = "<group>"; };
+		AD756A70150797AF00E8FBD5 /* DXCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXCellFactory.m; sourceTree = "<group>"; };
+		C0B068966620472FA7E51098 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D5A9E47DEBA44AC7A86BD840 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD756A3515078E1200E8FBD5 /* Foundation.framework in Frameworks */,
+				EC646342126347D8BFE7B2CA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,7 @@
 				AD756A4515078E1300E8FBD5 /* UIKit.framework in Frameworks */,
 				AD756A4615078E1300E8FBD5 /* Foundation.framework in Frameworks */,
 				AD756A4915078E1300E8FBD5 /* libNimbusAdditionals.a in Frameworks */,
+				91F12FC62FEC40569AC776EC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +83,7 @@
 				AD756A4A15078E1300E8FBD5 /* NimbusAdditionalsTests */,
 				AD756A3315078E1200E8FBD5 /* Frameworks */,
 				AD756A3215078E1200E8FBD5 /* Products */,
+				C0B068966620472FA7E51098 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +102,7 @@
 				AD756A3415078E1200E8FBD5 /* Foundation.framework */,
 				AD756A4215078E1300E8FBD5 /* SenTestingKit.framework */,
 				AD756A4415078E1300E8FBD5 /* UIKit.framework */,
+				D5A9E47DEBA44AC7A86BD840 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,9 +110,11 @@
 		AD756A3615078E1200E8FBD5 /* NimbusAdditionals */ = {
 			isa = PBXGroup;
 			children = (
-				AD756A3915078E1200E8FBD5 /* NimbusAdditionals.h */,
-				AD756A3A15078E1200E8FBD5 /* NimbusAdditionals.m */,
 				AD756A3715078E1200E8FBD5 /* Supporting Files */,
+				AD756A6B1507949100E8FBD5 /* DXTableViewModel.h */,
+				AD756A6C1507949100E8FBD5 /* DXTableViewModel.m */,
+				AD756A6F150797AF00E8FBD5 /* DXCellFactory.h */,
+				AD756A70150797AF00E8FBD5 /* DXCellFactory.m */,
 			);
 			path = NimbusAdditionals;
 			sourceTree = "<group>";
@@ -138,6 +153,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD756A6D1507949100E8FBD5 /* DXTableViewModel.h in Headers */,
+				AD756A71150797AF00E8FBD5 /* DXCellFactory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +168,7 @@
 				AD756A2D15078E1200E8FBD5 /* Sources */,
 				AD756A2E15078E1200E8FBD5 /* Frameworks */,
 				AD756A2F15078E1200E8FBD5 /* Headers */,
+				17A401999A63475A9F2BCC55 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +187,7 @@
 				AD756A3D15078E1300E8FBD5 /* Frameworks */,
 				AD756A3E15078E1300E8FBD5 /* Resources */,
 				AD756A3F15078E1300E8FBD5 /* ShellScript */,
+				17A401999A63475A9F2BCC55 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +238,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		17A401999A63475A9F2BCC55 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		AD756A3F15078E1300E8FBD5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,7 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD756A3B15078E1200E8FBD5 /* NimbusAdditionals.m in Sources */,
+				AD756A6E1507949100E8FBD5 /* DXTableViewModel.m in Sources */,
+				AD756A72150797AF00E8FBD5 /* DXCellFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +351,12 @@
 		};
 		AD756A5615078E1300E8FBD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B068966620472FA7E51098 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/NimbusAdditionals.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NimbusAdditionals/NimbusAdditionals-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -329,10 +365,12 @@
 		};
 		AD756A5715078E1300E8FBD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B068966620472FA7E51098 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/NimbusAdditionals.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NimbusAdditionals/NimbusAdditionals-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -341,30 +379,38 @@
 		};
 		AD756A5915078E1300E8FBD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B068966620472FA7E51098 /* Pods.xcconfig */;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NimbusAdditionals/NimbusAdditionals-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "NimbusAdditionalsTests/NimbusAdditionalsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
 		AD756A5A15078E1300E8FBD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B068966620472FA7E51098 /* Pods.xcconfig */;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NimbusAdditionals/NimbusAdditionals-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "NimbusAdditionalsTests/NimbusAdditionalsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -388,6 +434,7 @@
 				AD756A5715078E1300E8FBD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD756A5815078E1300E8FBD5 /* Build configuration list for PBXNativeTarget "NimbusAdditionalsTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +443,7 @@
 				AD756A5A15078E1300E8FBD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

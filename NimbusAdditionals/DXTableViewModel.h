@@ -1,13 +1,16 @@
 //
-//  NimbusAdditionals.h
+//  DXTableViewModel.h
 //  NimbusAdditionals
 //
 //  Created by Sergey Zenchenko on 3/7/12.
 //  Copyright (c) 2012 DIMALEX. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NITableViewModel.h"
 
-@interface NimbusAdditionals : NSObject
+
+@interface DXTableViewModel : NITableViewModel
+
+
 
 @end
