@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07B3060F1513A05F00792CDD /* DXCellFactroryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B3060E1513A05F00792CDD /* DXCellFactroryDelegate.h */; };
 		91F12FC62FEC40569AC776EC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A9E47DEBA44AC7A86BD840 /* libPods.a */; };
 		AD756A3515078E1200E8FBD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD756A3415078E1200E8FBD5 /* Foundation.framework */; };
 		AD756A4315078E1300E8FBD5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD756A4215078E1300E8FBD5 /* SenTestingKit.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07B3060E1513A05F00792CDD /* DXCellFactroryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXCellFactroryDelegate.h; sourceTree = "<group>"; };
 		AD756A3115078E1200E8FBD5 /* libNimbusAdditionals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNimbusAdditionals.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD756A3415078E1200E8FBD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AD756A3815078E1200E8FBD5 /* NimbusAdditionals-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NimbusAdditionals-Prefix.pch"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				AD756A6C1507949100E8FBD5 /* DXTableViewModel.m */,
 				AD756A6F150797AF00E8FBD5 /* DXCellFactory.h */,
 				AD756A70150797AF00E8FBD5 /* DXCellFactory.m */,
+				07B3060E1513A05F00792CDD /* DXCellFactroryDelegate.h */,
 			);
 			path = NimbusAdditionals;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			files = (
 				AD756A6D1507949100E8FBD5 /* DXTableViewModel.h in Headers */,
 				AD756A71150797AF00E8FBD5 /* DXCellFactory.h in Headers */,
+				07B3060F1513A05F00792CDD /* DXCellFactroryDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

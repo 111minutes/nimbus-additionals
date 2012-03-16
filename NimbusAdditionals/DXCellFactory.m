@@ -15,6 +15,8 @@
 @end
 
 @implementation DXCellFactory
+@synthesize delegate;
+@dynamic objectToCellMap;
 
 - (Class)cellClassForObject:(id)object {
     Class objectClass = [object class];
@@ -22,5 +24,40 @@
     
     return cellClass;
 }
+
+
+- (UITableViewCell *)tableViewModel: (NITableViewModel *)tableViewModel
+                   cellForTableView: (UITableView *)tableView
+                        atIndexPath: (NSIndexPath *)indexPath
+                         withObject: (id)object {
+    UITableViewCell* cell = nil;
+    
+    Class objectClass = [object class];
+    
+    Class cellClass = nil;
+    
+    if ([delegate respondsToSelector:@selector(classForCellWithIndexPath:)]) {
+        cellClass = [delegate classForCellWithIndexPath:indexPath];
+    }
+    
+    if (cellClass == nil) {
+        cellClass = [self.objectToCellMap objectForKey:objectClass];    
+    }
+    
+    // Explicit mappings override implicit mappings.
+    if (nil != cellClass) {
+        cell = [[self class] cellWithClass:cellClass tableView:tableView object:object];
+        
+    } else {
+        cell = [[self class] tableViewModel:tableViewModel
+                           cellForTableView:tableView
+                                atIndexPath:indexPath
+                                 withObject:object];
+    }
+    return cell;
+}
+
+
+
 
 @end
