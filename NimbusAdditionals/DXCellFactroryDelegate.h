@@ -11,6 +11,8 @@
 
 @protocol DXCellFactroryDelegate <NSObject>
 
--(Class) classForCellWithIndexPath:(NSIndexPath*) indexPath;
+@optional
+-(Class) classForCellWithIndexPath:(NSIndexPath *)indexPath;
+
 
 @end

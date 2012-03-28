@@ -8,8 +8,9 @@
 
 #import "NICellFactory.h"
 #import "DXCellFactroryDelegate.h"
+#import "DXCellModelDelegate.h"
 
-@interface DXCellFactory : NICellFactory
+@interface DXCellFactory : NICellFactory <DXCellModelDelegate>
 
 - (Class)cellClassForObject:(id)object;
 

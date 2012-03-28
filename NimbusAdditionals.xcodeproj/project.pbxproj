@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079A8E4C152348980081978E /* DXCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 079A8E4A152348980081978E /* DXCellModel.h */; };
+		079A8E4D152348980081978E /* DXCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 079A8E4B152348980081978E /* DXCellModel.m */; };
+		079A8E5015234DE20081978E /* DXCellDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 079A8E4F15234DE20081978E /* DXCellDelegate.h */; };
+		079A8E5115234EBB0081978E /* DXCellDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 079A8E4F15234DE20081978E /* DXCellDelegate.h */; };
+		079A8E53152367370081978E /* DXCellModelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 079A8E52152367360081978E /* DXCellModelDelegate.h */; };
 		07B3060F1513A05F00792CDD /* DXCellFactroryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B3060E1513A05F00792CDD /* DXCellFactroryDelegate.h */; };
 		91F12FC62FEC40569AC776EC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A9E47DEBA44AC7A86BD840 /* libPods.a */; };
 		AD756A3515078E1200E8FBD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD756A3415078E1200E8FBD5 /* Foundation.framework */; };
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		079A8E4A152348980081978E /* DXCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXCellModel.h; sourceTree = "<group>"; };
+		079A8E4B152348980081978E /* DXCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXCellModel.m; sourceTree = "<group>"; };
+		079A8E4F15234DE20081978E /* DXCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXCellDelegate.h; sourceTree = "<group>"; };
+		079A8E52152367360081978E /* DXCellModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXCellModelDelegate.h; sourceTree = "<group>"; };
 		07B3060E1513A05F00792CDD /* DXCellFactroryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXCellFactroryDelegate.h; sourceTree = "<group>"; };
 		AD756A3115078E1200E8FBD5 /* libNimbusAdditionals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNimbusAdditionals.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD756A3415078E1200E8FBD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +127,10 @@
 				AD756A6F150797AF00E8FBD5 /* DXCellFactory.h */,
 				AD756A70150797AF00E8FBD5 /* DXCellFactory.m */,
 				07B3060E1513A05F00792CDD /* DXCellFactroryDelegate.h */,
+				079A8E4A152348980081978E /* DXCellModel.h */,
+				079A8E4B152348980081978E /* DXCellModel.m */,
+				079A8E4F15234DE20081978E /* DXCellDelegate.h */,
+				079A8E52152367360081978E /* DXCellModelDelegate.h */,
 			);
 			path = NimbusAdditionals;
 			sourceTree = "<group>";
@@ -159,6 +172,9 @@
 				AD756A6D1507949100E8FBD5 /* DXTableViewModel.h in Headers */,
 				AD756A71150797AF00E8FBD5 /* DXCellFactory.h in Headers */,
 				07B3060F1513A05F00792CDD /* DXCellFactroryDelegate.h in Headers */,
+				079A8E4C152348980081978E /* DXCellModel.h in Headers */,
+				079A8E5015234DE20081978E /* DXCellDelegate.h in Headers */,
+				079A8E53152367370081978E /* DXCellModelDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079A8E5115234EBB0081978E /* DXCellDelegate.h in Sources */,
 				AD756A6E1507949100E8FBD5 /* DXTableViewModel.m in Sources */,
 				AD756A72150797AF00E8FBD5 /* DXCellFactory.m in Sources */,
+				079A8E4D152348980081978E /* DXCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

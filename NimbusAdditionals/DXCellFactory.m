@@ -7,6 +7,8 @@
 //
 
 #import "DXCellFactory.h"
+#import "DXCellModel.h"
+#import "DXCellDelegate.h"
 
 @interface DXCellFactory()
 
@@ -32,7 +34,9 @@
                          withObject: (id)object {
     UITableViewCell* cell = nil;
     
-    Class objectClass = [object class];
+    DXCellModel *model = (DXCellModel *) object;
+    
+    Class objectClass = [model.object class];
     
     Class cellClass = nil;
     
@@ -58,6 +62,45 @@
 }
 
 
++ (UITableViewCell *)cellWithClass:(Class)cellClass
+                         tableView:(UITableView *)tableView
+                            object:(id)object {
+    UITableViewCell* cell = nil;
+    
+    NSString* identifier = NSStringFromClass(cellClass);
+    
+    cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    if (nil == cell) {
+        UITableViewCellStyle style = UITableViewCellStyleDefault;
+        if ([object respondsToSelector:@selector(cellStyle)]) {
+            style = [object cellStyle];
+        }
+        cell = [[cellClass alloc] initWithStyle:style reuseIdentifier:identifier];
+    }
+        
+    // Allow the cell to configure itself with the object's information.
+    
+    if ([cell respondsToSelector:@selector(shouldUpdateCellWithModel:)]) {
+        [(id<DXCellDelegate>)cell shouldUpdateCellWithModel:object];
+    }
+    else if ([cell respondsToSelector:@selector(shouldUpdateCellWithObject:)]) {
+        [(id<NICell>)cell shouldUpdateCellWithObject:[(DXCellModel*)object object]];
+    }
+    
+    return cell;
+}
+
+#pragma mark -
+#pragma mark DXCellModelDelegate
+
+-(Class) classForCellModelWithIndexPath:(NSIndexPath *)indexPath {
+    // need to override in subclasses
+    return nil;
+}
 
 
 @end
+
+
+

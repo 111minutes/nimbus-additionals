@@ -7,10 +7,14 @@
 //
 
 #import "NITableViewModel.h"
-
+#import "DXCellModelDelegate.h"
+#import "DXCellModel.h"
 
 @interface DXTableViewModel : NITableViewModel
 
+@property (nonatomic, strong) id<DXCellModelDelegate> cellModelDelegate;
 
+- (DXCellModel *)getCellModelAtIndexPath:(NSIndexPath *)indexPath;
+- (void)setCellModel:(DXCellModel *)cellModel atIndexPath:(NSIndexPath *)indexPath;
 
 @end
