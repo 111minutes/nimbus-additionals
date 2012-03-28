@@ -34,9 +34,15 @@
                          withObject: (id)object {
     UITableViewCell* cell = nil;
     
-    DXCellModel *model = (DXCellModel *) object;
+    Class objectClass = nil;    
     
-    Class objectClass = [model.object class];
+    if ([object isKindOfClass:[DXCellModel class]]) {
+        DXCellModel *model = (DXCellModel *) object;    
+        objectClass = [model.object class];
+    }
+    else {
+        objectClass = [object class];
+    }
     
     Class cellClass = nil;
     
@@ -78,15 +84,20 @@
         }
         cell = [[cellClass alloc] initWithStyle:style reuseIdentifier:identifier];
     }
-        
+    
     // Allow the cell to configure itself with the object's information.
     
-    if ([cell respondsToSelector:@selector(shouldUpdateCellWithModel:)]) {
-        [(id<DXCellDelegate>)cell shouldUpdateCellWithModel:object];
+    if ([object isKindOfClass:[DXCellModel class]]) {
+        if ([cell respondsToSelector:@selector(shouldUpdateCellWithModel:)]) {
+            [(id<DXCellDelegate>)cell shouldUpdateCellWithModel:object];
+        }    
     }
-    else if ([cell respondsToSelector:@selector(shouldUpdateCellWithObject:)]) {
-        [(id<NICell>)cell shouldUpdateCellWithObject:[(DXCellModel*)object object]];
-    }
+    else {
+        if ([cell respondsToSelector:@selector(shouldUpdateCellWithObject:)]) {
+            [(id<NICell>)cell shouldUpdateCellWithObject:object];
+        }
+    }    
+    
     
     return cell;
 }
